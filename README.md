@@ -1,21 +1,24 @@
-# dilixi
-A platform for low-interest loans with separate roles for administrators, lenders, and borrowers
+# Dilixi 平台
 
+## 项目简介
+
+Dilixi 是一个低息借贷平台，支持管理员、贷款人和借款人三种角色。
+
+## 文件结构
+
+```
 dilixi/
 ├── public/             # 前端页面
-│   ├── index.php       # 网站首页
-│   ├── register.php    # 用户注册页面
-│   ├── login.php       # 用户登录页面
-│   ├── css/            # 样式文件
-│   │   └── style.css   # 通用样式文件
 ├── admin/              # 后台管理系统
-│   ├── dashboard.php   # 管理员仪表盘
-│   ├── manage_users.php # 用户管理页面
 ├── config/             # 配置文件
-│   └── database.php    # 数据库连接配置
 ├── includes/           # 通用功能
-│   ├── auth.php        # 用户认证功能
-│   ├── functions.php   # 通用函数
 ├── sql/                # 数据库初始化脚本
-│   └── schema.sql      # 表结构
 ├── README.md           # 项目说明文档
+```
+
+## 安装步骤
+
+1. 克隆此存储库到本地。
+2. 配置数据库连接信息（`config/database.php`）。
+3. 导入 `sql/schema.sql` 初始化数据库。
+4. 启动 Apache 或 Nginx 服务器，访问 `public/index.php`。
